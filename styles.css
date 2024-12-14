@@ -1,0 +1,80 @@
+body {
+    background-image: url(images/background_history.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh;  */
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: "Madimi One", serif;
+}
+
+
+
+
+/* Container styling */
+.history-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.history-container.right h2 {
+    text-align: right;
+    /* flex-direction: row;
+    float: right; */
+}
+
+.history-container.left h2 {
+    text-align: left;
+}
+/* Styling for the history articles */
+.history {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100%; /* To take full width in smaller screens */
+}
+
+/* Flexbox layout for left and right articles */
+.history.left {
+    flex-direction: row;
+    text-align: left; /* Align heading left for left section */
+}
+
+.history.right {
+    flex-direction: row-reverse;
+    text-align: right; /* Align heading right for right section */
+}
+
+.history img {
+    width: 161px;
+    height: 149px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+/* Ensure heading is above paragraph */
+.history h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    order: 1; /* Set <h2> to appear above <p> */
+}
+
+.history p {
+    font-size: 16px;
+    color: black;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 0;
+    order: 2; /* Set <p> to appear below <h2> */
+}
